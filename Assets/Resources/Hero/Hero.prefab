@@ -49,7 +49,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: a28d9c802273af841b75b66ef5c08232, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -77,7 +77,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 1.58
-  m_Radius: 0.5
+  m_Radius: 0.65
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -111,6 +111,10 @@ MonoBehaviour:
   _animator: {fileID: 8354178223856090841}
   _characterController: {fileID: 9012871744385638759}
   _movementSpeed: 5
+  _jumpSpeed: 0.4
+  _gravity: -0.2
+  _terminalVelocity: -1.2
+  _minFall: -0.1
 --- !u!1001 &3243295226950135760
 PrefabInstance:
   m_ObjectHideFlags: 0

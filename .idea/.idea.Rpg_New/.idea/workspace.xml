@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9332e054-8f49-413f-8331-c851f9705b38" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Bush.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Bush.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Cracks.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Cracks.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Crystal_A.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Crystal_A.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_FireGround.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_FireGround.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_GoldenPebbles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_GoldenPebbles.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_LavaRocks_A.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_LavaRocks_A.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Magma.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Magma.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Magma_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Magma_B.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Poison.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Poison.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Spores.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Cave_Spores.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_Bushes.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_Bushes.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_Cliff.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_Cliff.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_CracedMud.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_CracedMud.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_Sand.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_Sand.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_Sand_A.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_Sand_A.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_Sand_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_Sand_B.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_Tiles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Desert_Tiles.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_CrackedRock.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_CrackedRock.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Dirt_A.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Dirt_A.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Flowers.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Flowers.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_ForestRoad.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_ForestRoad.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Grass_A.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Grass_A.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Moss.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Moss.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Mud_A.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Mud_A.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Mud_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Mud_B.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_RiverPebbles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_RiverPebbles.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Rocks.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Rocks.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Roots.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Roots.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Roses.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Roses.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Wall.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Summer_Wall.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/WInter_Snow_Rocks.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/WInter_Snow_Rocks.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Water_A.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Water_A.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Water_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Water_B.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Water_C.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Water_C.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Water_D.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Water_D.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Bush.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Bush.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_ChunkyIce.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_ChunkyIce.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Cracked_Ice_C.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Cracked_Ice_C.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Flower.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Flower.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_FrozenGround.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_FrozenGround.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Hardsnow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Hardsnow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_IceCave.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_IceCave.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_IceCliff.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_IceCliff.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Ice_Cracked_A.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Ice_Cracked_A.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Moss.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Moss.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Roots.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Roots.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Snow_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Snow_B.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Spores.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Spores.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Wall.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_Wall.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_ce_Cracked_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/Flat Textures Pack/Textures/Winter_ce_Cracked_B.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/BodyParts_Albedo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/BodyParts_Albedo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/BodyParts_Mask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/BodyParts_Mask.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/BodyParts_SAM.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/BodyParts_SAM.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/Costumes_Albedo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/Costumes_Albedo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/Costumes_Mask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/Costumes_Mask.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/Costumes_SAM.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/Costumes_SAM.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/HeadParts_Albedo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/HeadParts_Albedo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/HeadParts_Mask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/HeadParts_Mask.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/HeadParts_SAM.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/HeadParts_SAM.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/Weapons_Albedo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/Weapons_Albedo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/Weapons_Mask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/Weapons_Mask.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/Weapons_SAM.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/MaskTintPBR/Weapons_SAM.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/BodyParts_AO.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/BodyParts_AO.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/BodyParts_Albedo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/BodyParts_Albedo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/BodyParts_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/BodyParts_MetallicSmoothness.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/BodyParts_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/BodyParts_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Costumes_AO.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Costumes_AO.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Costumes_Albedo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Costumes_Albedo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Costumes_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Costumes_MetallicSmoothness.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Costumes_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Costumes_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/HeadParts_AO.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/HeadParts_AO.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/HeadParts_Albedo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/HeadParts_Albedo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/HeadParts_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/HeadParts_MetallicSmoothness.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/HeadParts_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/HeadParts_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Weapons_AO.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Weapons_AO.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Weapons_Albedo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Weapons_Albedo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Weapons_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Weapons_MetallicSmoothness.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Weapons_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetPacks/ModularRPGHeroesPBR/Texture/RegularPBR/Weapons_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Camera/OrbitCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Camera/OrbitCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Hero/HeroMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/GameBootstrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/GameBootstrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Logic/AnimatorState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/AnimatorState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Services/Input/IInputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/Input/IInputService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Services/Input/InputServiceYG.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Services/Input/InputServiceYG.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Hero/Animators/SwordShield.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Hero/Animators/SwordShield.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Hero/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Hero/Hero.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Hud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Hud.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BaseLocation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BaseLocation.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Services/Input/InputServiceDesctop.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Services/Input/InputService.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Services/Input/ButtonEvents.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Services/Input/IInputService.cs" />
+        <option value="$PROJECT_DIR$/Assets/CodeBase/Services/Input/InputServiceMobile.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2jv86T2W9mZgfjwTCNlKsK90oSO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9332e054-8f49-413f-8331-c851f9705b38" name="Default Changelist" comment="" />
+      <created>1722256027563</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722256027563</updated>
+      <workItem from="1722256044415" duration="27000" />
+      <workItem from="1722256108504" duration="284000" />
+      <workItem from="1722256413825" duration="307000" />
+      <workItem from="1722256886063" duration="158000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

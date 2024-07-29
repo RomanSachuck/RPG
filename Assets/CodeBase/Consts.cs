@@ -1,4 +1,7 @@
-﻿public static class Consts
+﻿namespace CodeBase
 {
-    public const float Epsilon = .001f;
+    public static class Consts
+    {
+        public const float Epsilon = .001f;
+    }
 }

@@ -1,9 +1,13 @@
 using UnityEngine;
 
-public interface IInputService
+namespace CodeBase.Services.Input
 {
-    public Vector2 MoveAxis { get; }
-    public float LookAxisX { get; }
-    public float LookAxisY { get; }
-    public bool IsAttack { get; }
+    public interface IInputService
+    {
+        public Vector2 MoveAxis { get; }
+        public float LookAxisX { get; }
+        public float LookAxisY { get; }
+        public bool IsMainAttack { get; }
+        public bool IsJump { get; }
+    }
 }

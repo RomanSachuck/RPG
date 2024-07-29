@@ -1,85 +1,159 @@
+using CodeBase;
+using CodeBase.Infrastructure;
+using CodeBase.Services.Input;
 using UnityEngine;
 
-public class HeroMove : MonoBehaviour
+namespace Assets.CodeBase.Hero
 {
-    [SerializeField] private HeroAnimator _animator;
-    [SerializeField] private CharacterController _characterController;
-    [SerializeField] private float _movementSpeed;
-    
-
-    private IInputService _inputService;
-    private Camera _camera;
-    private float _heroRotationLimit;
-
-    private void Awake() =>
-        _inputService = Game.InputService;
-
-    private void Start() =>
-        _camera = Camera.main;
-
-    private void Update()
+    public class HeroMove : MonoBehaviour
     {
-        Vector3 movementVector = Vector3.zero;
-        float rotateSpeed = 10f;
-        float currentSpeed = _movementSpeed;
+        [SerializeField] private HeroAnimator _animator;
+        [SerializeField] private CharacterController _characterController;
+        [SerializeField] private float _movementSpeed;
 
-        if (_inputService.MoveAxis.sqrMagnitude > Consts.Epsilon)
+        [SerializeField] private float _jumpSpeed = 5.0f;
+        [SerializeField] private float _gravity = -9.8f;
+        [SerializeField] private float _terminalVelocity = -10.0f;
+        [SerializeField] private float _minFall = -1.5f;
+        private float _verticalSpeed;
+
+        private IInputService _inputService;
+        private Camera _camera;
+
+        private bool _isJumpingState;
+        private ControllerColliderHit _contact;
+
+        void OnControllerColliderHit(ControllerColliderHit hit) =>
+            _contact = hit;
+
+        private void Awake() =>
+            _inputService = Game.InputService;
+
+        private void Start() =>
+            _camera = Camera.main;
+
+        private void Update()
         {
+            Vector3 movementVector;
+            float rotateSpeed = 10f;
+            float currentSpeed = _movementSpeed;
+
             movementVector = CalculateMovementVector();
 
-            if (MovingForward())
+            if (_inputService.MoveAxis.sqrMagnitude > Consts.Epsilon)
             {
-                LookMovementDirection(movementVector, rotateSpeed);
-                _animator.PlayMoveForward(_characterController.velocity.sqrMagnitude);
-            } 
+                if (IsMovingForward())
+                {
+                    LookMovementDirection(movementVector, rotateSpeed);
+                    _animator.PlayMoveForward(_characterController.velocity.sqrMagnitude);
+                }
+                else
+                {
+                    LookMovementDirection(-movementVector, rotateSpeed);
+                    _animator.PlayMoveBack();
+                }
+            }
             else
             {
-                LookForward(rotateSpeed);
+                _animator.ResetToIdle();
+            }
 
-                if (MovingRight())
-                    _animator.PlayMoveRight();
-                else if(MovingLeft())
-                    _animator.PlayMoveLeft();
-                else
-                    _animator.PlayMoveBack();
-
-                //currentSpeed = _movementSpeed / 3;
-            }     
+            _characterController.Move(currentSpeed * movementVector * Time.deltaTime);
         }
-        else
+
+        private Vector3 CalculateMovementVector()
         {
-            _animator.ResetToIdle();
+            Quaternion cameraRotation = _camera.transform.rotation;
+            _camera.transform.eulerAngles = new Vector3(20, _camera.transform.eulerAngles.y, 0);
+            Vector3 movementVector = _camera.transform.TransformDirection(_inputService.MoveAxis);
+            _camera.transform.rotation = cameraRotation;
+
+            movementVector = CalculateJumpAndColission(movementVector);
+            movementVector.Normalize();
+            return movementVector;
         }
 
-        movementVector += Physics.gravity;
-        _characterController.Move((currentSpeed * movementVector * Time.deltaTime));
+        public Vector3 CalculateJumpAndColission(Vector3 movementVector)
+        {
+            bool hitGround = RayCastGround();
+
+            if (hitGround)
+            {
+                if (_inputService.IsJump)
+                {
+                    _verticalSpeed = _jumpSpeed;
+                    StartJump();
+                }
+                else
+                {
+                    _verticalSpeed = _minFall;
+
+                    if (_isJumpingState)
+                        EndJump();
+                }
+            }
+            else
+            {
+                _verticalSpeed += _gravity * 5 * Time.deltaTime;
+
+                if (_verticalSpeed < _terminalVelocity)
+                    _verticalSpeed = _terminalVelocity;
+
+                if (_characterController.isGrounded)
+                {
+                    if (Vector3.Dot(movementVector, _contact.normal) < 0)
+                    {
+                        movementVector = _contact.normal;
+                        EndJump();
+                    }
+                    else
+                    {
+                        movementVector += _contact.normal;
+                        EndJump();
+                    }
+                }
+            }
+
+            return new Vector3(movementVector.x, _verticalSpeed, movementVector.z);
+        }
+
+        private bool RayCastGround()
+        {
+            RaycastHit hit;
+
+            if (_verticalSpeed < 0 && Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Vector3.down, out hit))
+            {
+                float check = _characterController.height / 1.55f;
+                return hit.distance <= check;
+            }
+            else
+                return false;
+        }
+
+        private void StartJump()
+        {
+            _animator.PlayJumpStart();
+            _isJumpingState = true;
+        }
+
+        private void EndJump()
+        {
+            _animator.PlayJumpEnd();
+            _isJumpingState = false;
+        }
+
+        private bool IsMovingForward() =>
+            _inputService.MoveAxis.y >= 0;
+
+        private void LookForward(float rotateSpeed)
+        {
+            Vector3 forward = _camera.transform.TransformDirection(Vector3.forward);
+            forward.y = 0;
+
+            transform.forward = Vector3.Slerp(transform.forward, forward, rotateSpeed * Time.deltaTime);
+        }
+
+        private void LookMovementDirection(Vector3 movementVector, float rotateSpeed) =>
+            transform.forward = Vector3.Slerp(transform.forward, new Vector3(movementVector.x, 0, movementVector.z), rotateSpeed * Time.deltaTime);
     }
-
-    private Vector3 CalculateMovementVector()
-    {
-        Vector3 movementVector = _camera.transform.TransformDirection(_inputService.MoveAxis);
-        movementVector.y = 0;
-        movementVector.Normalize();
-        return movementVector;
-    }
-
-    private bool MovingForward() =>
-        _inputService.MoveAxis.y > _heroRotationLimit;
-
-    private bool MovingRight() =>
-        _inputService.MoveAxis.y <= _heroRotationLimit && _inputService.MoveAxis.x > 0;
-
-    private bool MovingLeft() =>
-        _inputService.MoveAxis.y <= _heroRotationLimit && _inputService.MoveAxis.x < 0;
-
-    private void LookForward(float rotateSpeed)
-    {
-        Vector3 forward = _camera.transform.TransformDirection(Vector3.forward);
-        forward.y = 0;
-
-        transform.forward = Vector3.Slerp(transform.forward, forward, rotateSpeed * Time.deltaTime);
-    }
-
-    private void LookMovementDirection(Vector3 movementVector, float rotateSpeed) =>
-        transform.forward = Vector3.Slerp(transform.forward, movementVector, rotateSpeed * Time.deltaTime);
 }
