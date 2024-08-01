@@ -1,6 +1,6 @@
 ﻿using Assets.CodeBase.Infrastructure;
+using Assets.CodeBase.Infrastructure.Services;
 using CodeBase.Infrastructure.StateMachine;
-using CodeBase.Services.Input;
 using CodeBase.Tools;
 
 namespace CodeBase.Infrastructure
@@ -8,14 +8,13 @@ namespace CodeBase.Infrastructure
     public class Game
     {
         public static GameSessionType SessionType { get; private set; }
-        public static IInputService InputService;
         public GameStateMachine StateMachine { get; private set; }
 
-        public Game(ICoroutineRunner coroutineRunner)
+        public Game(ICoroutineRunner coroutineRunner, LoadingCurtain curtain)
         {
-            StateMachine = new GameStateMachine(new SceneLoader(coroutineRunner));
-
             SessionType = CheckSessionType();
+
+            StateMachine = new GameStateMachine(coroutineRunner, new SceneLoader(coroutineRunner), curtain, AllServices.Container);  
         }
 
         private GameSessionType CheckSessionType()

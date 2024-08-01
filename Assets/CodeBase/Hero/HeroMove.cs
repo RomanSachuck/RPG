@@ -1,11 +1,14 @@
+using Assets.CodeBase.Data;
+using Assets.CodeBase.Infrastructure.Services;
+using Assets.CodeBase.Infrastructure.Services.PersistentProgress;
 using CodeBase;
-using CodeBase.Infrastructure;
 using CodeBase.Services.Input;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.CodeBase.Hero
 {
-    public class HeroMove : MonoBehaviour
+    public class HeroMove : MonoBehaviour, ISavedProgress
     {
         [SerializeField] private HeroAnimator _animator;
         [SerializeField] private CharacterController _characterController;
@@ -27,7 +30,7 @@ namespace Assets.CodeBase.Hero
             _contact = hit;
 
         private void Awake() =>
-            _inputService = Game.InputService;
+            _inputService = AllServices.Container.Single<IInputService>();
 
         private void Start() =>
             _camera = Camera.main;
@@ -45,7 +48,7 @@ namespace Assets.CodeBase.Hero
                 if (IsMovingForward())
                 {
                     LookMovementDirection(movementVector, rotateSpeed);
-                    _animator.PlayMoveForward(_characterController.velocity.sqrMagnitude);
+                    _animator.PlayMoveForward(_characterController.velocity.magnitude);
                 }
                 else
                 {
@@ -155,5 +158,28 @@ namespace Assets.CodeBase.Hero
 
         private void LookMovementDirection(Vector3 movementVector, float rotateSpeed) =>
             transform.forward = Vector3.Slerp(transform.forward, new Vector3(movementVector.x, 0, movementVector.z), rotateSpeed * Time.deltaTime);
+
+        public void UpdateProgress(PlayerProgress progress) => 
+            progress.WorldData.PositionOnLevel = new PositionOnLevel(CurrentLevel(), transform.position.AsVector3Data());
+
+        public void LoadProgress(PlayerProgress progress)
+        {
+            if(CurrentLevel() == progress.WorldData.PositionOnLevel.Level)
+            {
+                Vector3Data savedPosition = progress.WorldData.PositionOnLevel.Position;
+                if (savedPosition != null)
+                    Warp(to: savedPosition);
+            }
+        }
+
+        private void Warp(Vector3Data to)
+        {
+            _characterController.enabled = false;
+            transform.position = to.AsVector3Unity().AddY(_characterController.height);
+            _characterController.enabled = true;
+        }
+
+        private string CurrentLevel() =>
+            SceneManager.GetActiveScene().name;
     }
 }

@@ -8,11 +8,11 @@ namespace Assets.CodeBase.Hero
     {
         [SerializeField] private Animator _animator;
 
-        private readonly int MoveForwardHash = Animator.StringToHash("IsMovingForward");
-        private readonly int MoveBackHash = Animator.StringToHash("IsMovingBack");
-        private readonly int MoveSpeedHash = Animator.StringToHash("Speed");
-        private readonly int JumpStartHash = Animator.StringToHash("JumpStart");
-        private readonly int JumpEndHash = Animator.StringToHash("JumpEnd");
+        private readonly int _moveForwardHash = Animator.StringToHash("IsMovingForward");
+        private readonly int _moveBackHash = Animator.StringToHash("IsMovingBack");
+        private readonly int _moveSpeedHash = Animator.StringToHash("Speed");
+        private readonly int _jumpStartHash = Animator.StringToHash("JumpStart");
+        private readonly int _jumpEndHash = Animator.StringToHash("JumpEnd");
 
         private readonly int _idleStateHash = Animator.StringToHash("Idle");
         private readonly int _moveStateHash = Animator.StringToHash("MoveForward");
@@ -31,24 +31,24 @@ namespace Assets.CodeBase.Hero
         public void ResetToIdle() =>
             OffAllBools();
 
-        public void PlayMoveForward(float velocitySqrMagnitude)
+        public void PlayMoveForward(float velocityMagnitude)
         {
             OffAllBools();
-            _animator.SetBool(MoveForwardHash, true);
-            _animator.SetFloat(MoveSpeedHash, velocitySqrMagnitude, 0.1f, Time.deltaTime);
+            _animator.SetBool(_moveForwardHash, true);
+            _animator.SetFloat(_moveSpeedHash, velocityMagnitude, 0.1f, Time.deltaTime);
         }
 
         public void PlayMoveBack()
         {
             OffAllBools();
-            _animator.SetBool(MoveBackHash, true);
+            _animator.SetBool(_moveBackHash, true);
         }
 
         public void PlayJumpStart() =>
-            _animator.SetTrigger(JumpStartHash);
+            _animator.SetTrigger(_jumpStartHash);
 
         public void PlayJumpEnd() =>
-            _animator.SetTrigger(JumpEndHash);
+            _animator.SetTrigger(_jumpEndHash);
 
         public void EnteredState(int stateHash)
         {
@@ -87,8 +87,8 @@ namespace Assets.CodeBase.Hero
 
         private void OffAllBools()
         {
-            _animator.SetBool(MoveBackHash, false);
-            _animator.SetBool(MoveForwardHash, false);
+            _animator.SetBool(_moveBackHash, false);
+            _animator.SetBool(_moveForwardHash, false);
         }
     }
 }

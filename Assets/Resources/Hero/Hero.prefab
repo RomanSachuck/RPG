@@ -110,7 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 8354178223856090841}
   _characterController: {fileID: 9012871744385638759}
-  _movementSpeed: 5
+  _movementSpeed: 7
   _jumpSpeed: 0.4
   _gravity: -0.2
   _terminalVelocity: -1.2

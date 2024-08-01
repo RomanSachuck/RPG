@@ -1,4 +1,9 @@
 ﻿using Assets.CodeBase.Infrastructure;
+using Assets.CodeBase.Infrastructure.Services;
+using Assets.CodeBase.Infrastructure.Services.PersistentProgress;
+using Assets.CodeBase.Infrastructure.Services.SaveLoad;
+using Assets.CodeBase.Infrastructure.StateMachine;
+using Assets.CodeBase.Services.Factory;
 using System;
 using System.Collections.Generic;
 
@@ -9,12 +14,14 @@ namespace CodeBase.Infrastructure.StateMachine
         private Dictionary<Type, IExitableState> _states;
         private IExitableState _activeState;
 
-        public GameStateMachine(SceneLoader sceneLoader)
+        public GameStateMachine(ICoroutineRunner coroutineRunner , SceneLoader sceneLoader, LoadingCurtain curtain, AllServices services)
         {
             _states = new Dictionary<Type, IExitableState>()
             {
-                [typeof(BootstrapState)] = new BootstrapState(this, sceneLoader),
-                [typeof(LoadLevelState)] = new LoadLevelState(this, sceneLoader)
+                [typeof(BootstrapState)] = new BootstrapState(this, sceneLoader, services),
+                [typeof(LoadProgressState)] = new LoadProgressState(this, services.Single<IPersistentProgressService>(), services.Single<ISavedLoadService>()),
+                [typeof(LoadLevelState)] = new LoadLevelState(this, sceneLoader, curtain, services.Single<IGameFactory>(), services.Single<IPersistentProgressService>()),
+                [typeof(GameLoopState)] = new GameLoopState(this, coroutineRunner, services.Single<ISavedLoadService>())
             };
         }
 
@@ -26,7 +33,7 @@ namespace CodeBase.Infrastructure.StateMachine
 
         public void Enter<TState, TPayLoad>(TPayLoad payLoad) where TState : class, IPayLoadState<TPayLoad>
         {
-            TState state = GetState<TState>();
+            TState state = ChangeState<TState>();
             state.Enter(payLoad);
         }
 
@@ -40,9 +47,7 @@ namespace CodeBase.Infrastructure.StateMachine
             return state;
         }
 
-        private TState GetState<TState>() where TState : class, IExitableState
-        {
-            return _states[typeof(TState)] as TState;
-        }
+        private TState GetState<TState>() where TState : class, IExitableState => 
+            _states[typeof(TState)] as TState;
     }
 }

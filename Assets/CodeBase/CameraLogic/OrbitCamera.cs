@@ -1,3 +1,4 @@
+using Assets.CodeBase.Infrastructure.Services;
 using CodeBase.Infrastructure;
 using CodeBase.Services.Input;
 using UnityEngine;
@@ -19,7 +20,7 @@ namespace Assets.CodeBase.CameraLogic
         private Vector3 _offset = new Vector3(0.03f, -2.50f, 4.00f);
 
         private void Awake() =>
-            _inputService = Game.InputService;
+            _inputService = AllServices.Container.Single<IInputService>();
 
         void LateUpdate()
         {

@@ -1,0 +1,14 @@
+{
+    "idSave": 1123,
+    "isFirstSession": false,
+    "language": "ru",
+    "promptDone": false,
+    "money": 1,
+    "newPlayerName": "Hello!",
+    "openLevels": [
+        false,
+        true,
+        false
+    ],
+    "PlayerProgressJson": "{\"WorldData\":{\"PositionOnLevel\":{\"Level\":\"MainLocation\",\"Position\":{\"X\":204.18115234375,\"Y\":-0.010000050067901612,\"Z\":174.35057067871095}}}}"
+}
