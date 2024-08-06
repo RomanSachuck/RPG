@@ -2,6 +2,7 @@
 using Assets.CodeBase.Infrastructure.Services.PersistentProgress;
 using Assets.CodeBase.Services.AssetMenegment;
 using CodeBase.Infrastructure;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,18 +14,30 @@ namespace Assets.CodeBase.Services.Factory
         public List<ISavedProgressReader> ProgressReaders { get; private set; } = new List<ISavedProgressReader>();
         public List<ISavedProgress> ProgressWriters { get; private set; } = new List<ISavedProgress>();
 
+        public GameObject HeroGameObject { get; private set; }
+        public event Action HeroCrated;
+
         public GameFactory(IAssets assets) => 
             _assets = assets;
 
-        public GameObject CreateHero(GameObject playerInitialPoint) => 
-            InstantiateRegistered(AssetPath.Hero, playerInitialPoint);
-
-        public void CreateHud()
+        public GameObject CreateHero(GameObject playerInitialPoint)
         {
+            var hero = InstantiateRegistered(AssetPath.Hero, playerInitialPoint);
+            HeroGameObject = hero;
+            HeroCrated?.Invoke();
+            return hero;
+        }
+
+        public GameObject CreateHud()
+        {
+            GameObject hud;
+
             if (Game.SessionType == GameSessionType.Mobile)
-                InstantiateRegistered(AssetPath.HudMobile);
+                hud = InstantiateRegistered(AssetPath.HudMobile);
             else
-                InstantiateRegistered(AssetPath.HudDesctop);
+                hud = InstantiateRegistered(AssetPath.HudDesctop);
+
+            return hud;
         }
 
         private GameObject InstantiateRegistered(string path ,GameObject playerInitialPoint)

@@ -61,6 +61,8 @@ namespace Assets.CodeBase.Hero
                 _animator.ResetToIdle();
             }
 
+            if (_animator.IsAttacking && !_isJumpingState)
+                currentSpeed /= 4;
             _characterController.Move(currentSpeed * movementVector * Time.deltaTime);
         }
 

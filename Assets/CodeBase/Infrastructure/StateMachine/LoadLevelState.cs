@@ -1,7 +1,10 @@
 ﻿using Assets.CodeBase.CameraLogic;
+using Assets.CodeBase.Hero;
 using Assets.CodeBase.Infrastructure;
 using Assets.CodeBase.Infrastructure.Services.PersistentProgress;
 using Assets.CodeBase.Services.Factory;
+using Assets.CodeBase.UI;
+using System;
 using UnityEngine;
 
 namespace CodeBase.Infrastructure.StateMachine
@@ -51,8 +54,16 @@ namespace CodeBase.Infrastructure.StateMachine
             GameObject playerInitialPoint = GameObject.FindWithTag(PlayerInitialPointTag);
             GameObject hero = _gameFactory.CreateHero(playerInitialPoint);
 
-            _gameFactory.CreateHud();
+            InitHud(hero);
+
             CameraFollow(hero.transform);
+        }
+
+        private void InitHud(GameObject hero)
+        {
+            var hud = _gameFactory.CreateHud();
+            hud.GetComponentInChildren<ActorUiHero>().Initialize(hero.GetComponent<HeroHealth>());
+            hud.GetComponentInChildren<ActorUiEnemy>().Initialize(hero.GetComponent<HeroAttack>());
         }
 
         private void InformProgressReaders()

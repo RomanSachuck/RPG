@@ -10,20 +10,31 @@ namespace CodeBase.Services.Input
         public override bool IsMainAttack => GetButtonAttackUp();
         public override bool IsJump => GetButtonJump();
 
+        public InputServiceDesctop() 
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+
         private Vector2 GetMoveAxis() =>
             new(UnityEngine.Input.GetAxis(Horizontal) * HorizontalLimiter, UnityEngine.Input.GetAxis(Vertical));
+
         private float GetLookX() =>
             UnityEngine.Input.GetAxis(MouseX);
+
         private float GetLookY() =>
             UnityEngine.Input.GetAxis(MouseY);
+
         private bool GetButtonAttackUp()
         {
             if (!PointerOverUiElement())
                 return UnityEngine.Input.GetMouseButtonUp(0);
             else return false;
         }
+
         private bool GetButtonJump() =>
             UnityEngine.Input.GetKey(KeyCode.Space);
+
         private static bool PointerOverUiElement() =>
             UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject();
     }

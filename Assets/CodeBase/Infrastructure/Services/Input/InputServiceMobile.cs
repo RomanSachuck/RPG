@@ -12,16 +12,19 @@ namespace CodeBase.Services.Input
         public override bool IsMainAttack => GetButtonAttackUp();
         public override bool IsJump => GetButtonJumpUp();
 
-        private float _lookSensetive = .8f;
+        private float _lookSensetive = 1f;
         private ButtonEvents _buttonAttackMain;
         private ButtonEvents _buttonJump;
 
         private Vector2 GetMoveAxis() =>
             new(SimpleInput.GetAxis(Horizontal) * HorizontalLimiter, SimpleInput.GetAxis(Vertical));
+
         private float GetLookX() =>
             (SimpleInput.GetAxis(HorizontalLook)) * _lookSensetive;
+
         private float GetLookY() =>
             (SimpleInput.GetAxis(VerticalLook)) * _lookSensetive;
+
         private bool GetButtonAttackUp()
         {
             if (_buttonAttackMain == null)
@@ -29,6 +32,7 @@ namespace CodeBase.Services.Input
 
             return _buttonAttackMain.ButtonIsPressed;
         }
+
         private bool GetButtonJumpUp()
         {
             if (_buttonJump == null)
@@ -36,6 +40,7 @@ namespace CodeBase.Services.Input
 
             return _buttonJump.ButtonIsPressed;
         }
+
         private ButtonEvents FindButton(string buttonTag) =>
             GameObject.FindWithTag(buttonTag).GetComponent<ButtonEvents>();
     }

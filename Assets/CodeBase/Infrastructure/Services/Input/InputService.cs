@@ -16,9 +16,6 @@ namespace CodeBase.Services.Input
         public abstract float LookAxisX { get; }
         public abstract float LookAxisY { get; }
         public abstract bool IsMainAttack { get; }
-        public abstract bool IsJump { get; }
-
-        public InputService() =>
-            Cursor.visible = false;
+        public abstract bool IsJump { get; } 
     }
 }

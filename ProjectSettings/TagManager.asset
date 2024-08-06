@@ -7,6 +7,7 @@ TagManager:
   - ButtonAttackMain
   - ButtonJump
   - InitialPoint
+  - Crosshair
   layers:
   - Default
   - TransparentFX
@@ -20,9 +21,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Player
+  - Aggro
+  - Hittable
   - 
   - 
   - 

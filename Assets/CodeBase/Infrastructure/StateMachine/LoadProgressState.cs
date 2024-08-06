@@ -29,9 +29,23 @@ namespace Assets.CodeBase.Infrastructure.StateMachine
         {
         }
 
-        private void LoadProgressOrInitNew() => 
-            _progressService.PlayerProgress = 
-            _savedLoadService.Load() ?? 
-            new PlayerProgress("MainLocation");
+        private void LoadProgressOrInitNew()
+        {
+            _progressService.PlayerProgress =
+            _savedLoadService.Load() ??
+            NewProgress();
+        }
+
+        private static PlayerProgress NewProgress()
+        {
+            PlayerProgress progress = new PlayerProgress("MainLocation");
+
+            progress.HeroState.MaxHealth = 100;
+            progress.HeroState.ResetHealth();
+            progress.HeroStats.Damage = 1;
+            progress.HeroStats.DamageRadius = 1;
+
+            return progress;
+        }
     }
 }
